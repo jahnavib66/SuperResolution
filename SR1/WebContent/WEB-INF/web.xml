@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>SuperResolution_Client</display-name>
+
+	<servlet>
+		<servlet-name>Step1</servlet-name>
+		<servlet-class>com.sr.servlet.Step1Servlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Step1</servlet-name>
+		<url-pattern>/step1</url-pattern>
+	</servlet-mapping>
+
+   <filter>
+        <filter-name>MyFilter</filter-name>
+        <filter-class>com.sr.servlet.InitServlet</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+	<servlet>
+		<servlet-name>Step2</servlet-name>
+		<servlet-class>com.sr.servlet.Step2Servlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Step2</servlet-name>
+		<url-pattern>/step2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Step3</servlet-name>
+		<servlet-class>com.sr.servlet.Step3Servlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Step3</servlet-name>
+		<url-pattern>/step3</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Step4</servlet-name>
+		<servlet-class>com.sr.servlet.Step4Servlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Step4</servlet-name>
+		<url-pattern>/step4</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Reset</servlet-name>
+		<servlet-class>com.sr.servlet.ResetSessionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Reset</servlet-name>
+		<url-pattern>/reset</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
