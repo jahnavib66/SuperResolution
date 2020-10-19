@@ -69,14 +69,14 @@
 						class="icon-bar"></span>
 				</button>
 				<a href="index.jsp"
-					style='color: white; font-size: 26px; font-weight: bold; margin-top: 50px;'>Final Year Project Work (2020)</a>
+					style='color: white; font-size: 26px; font-weight: bold; margin-top: 50px;'>XON Labs</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="top-navbar-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li><span class="li-text"
-						style='font-weight: bold; color: white;'> Final Year
-							Project Work 2020 </span></li>
+						style='font-weight: bold; color: white;'> Internship Program
+							 </span></li>
 				</ul>
 			</div>
 		</div>
