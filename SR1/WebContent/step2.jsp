@@ -118,7 +118,7 @@
 						                        </div>
 						                        <div class="form-group">
 						                        	<label>Mobile</label>
-						                        	<input type="text" name="mobile" required="required" placeholder="Mobile" class="form-control" >
+						                        	<input type="text" name="mobile" required="required" placeholder="Mobile" class="form-control" pattern="^\d{10}$" title="10 digit phone number" />
 						                        </div>
 						                        <button id='prev' type="button" class="btn btn-previous">Previous</button>
 						                        <button type="submit" class="btn btn-next">Next</button>
