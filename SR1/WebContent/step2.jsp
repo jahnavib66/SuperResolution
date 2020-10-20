@@ -52,14 +52,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="index.jsp" style='color: white; font-size: 26px; font-weight: bold; margin-top: 50px;' >Final Year Project Work (2020)</a>
+					<a href="index.jsp" style='color: white; font-size: 26px; font-weight: bold; margin-top: 50px;' >Internship 2020</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<span class="li-text" style='font-weight: bold; color: white;'>
-								Final Year Project Work 2020
+								XonsLabs
 							</span> 
 						</li>
 					</ul>
@@ -118,7 +118,7 @@
 						                        </div>
 						                        <div class="form-group">
 						                        	<label>Mobile</label>
-						                        	<input type="text" name="mobile" required="required" placeholder="Mobile" class="form-control" >
+						                        	<input type="text" name="mobile" required="required" placeholder="Mobile" pattern="[0-9]{10}" maxlength="10"class="form-control" >
 						                        </div>
 						                        <button id='prev' type="button" class="btn btn-previous">Previous</button>
 						                        <button type="submit" class="btn btn-next">Next</button>
