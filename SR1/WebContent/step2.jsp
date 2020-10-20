@@ -118,7 +118,7 @@
 						                        </div>
 						                        <div class="form-group">
 						                        	<label>Mobile</label>
-						                        	<input type="text" name="mobile" required="required" placeholder="Mobile" class="form-control" >
+									        <input type="text" name="mobile" required="required" placeholder="Mobile" pattern="[0-9]{10}" maxlength="10" class="form-control" >
 						                        </div>
 						                        <button id='prev' type="button" class="btn btn-previous">Previous</button>
 						                        <button type="submit" class="btn btn-next">Next</button>
