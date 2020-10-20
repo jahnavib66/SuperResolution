@@ -118,10 +118,16 @@
 						                        </div>
 						                        <div class="form-group">
 						                        	<label>Mobile</label>
-						                        	<input type="text" name="mobile" required="required" placeholder="Mobile" class="form-control" >
+						                        <input type="tel" name="mobile" id="phone" required="required" pattern="^[0-9]{10}$" placeholder="Mobile" class="form-control" >
 						                        </div>
 						                        <button id='prev' type="button" class="btn btn-previous">Previous</button>
 						                        <button type="submit" class="btn btn-next">Next</button>
+						                        <script>
+						                        document.getElementById("phone").addEventListener("invalid", myFunction);
+											        function myFunction() {
+													alert("Please enter valid 10 digit Number!!!");
+												}
+												</script>
 						                    </form>
 					                    </div>
 			                    </fieldset>
@@ -154,7 +160,6 @@
 				});
 			});
 		</script>
-		
     </body>
 
 </html>
