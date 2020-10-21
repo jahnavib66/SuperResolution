@@ -113,8 +113,8 @@
 			                            <div class="form-bottom">
 		                            		<form action='step2' method=post>
 						                        <div class="form-group">
-						                        	<label>Email</label>
-						                        	<input type="text" name="email" required="required" placeholder="Email" class="form-control" >
+						                     <!-- <label>Email</label> -->    	
+						                       <!--<input type="text" name="email" required="required" placeholder="Email" class="form-control" >  --> 	
 						                        </div>
 						                        <div class="form-group">
 						                        	<label>Mobile</label>

@@ -1,15 +1,15 @@
 package com.sr.servlet;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sr.mail.MailThread;
+//import com.sr.mail.MailThread;
 import com.sr.mobile.SendMessage;
 import com.sr.util.VerificationCode;
 
@@ -29,13 +29,13 @@ public class Step2Servlet extends HttpServlet
    {
       try
       {
-         String email = req.getParameter("email");
+        // String email = req.getParameter("email");
          String mobile = req.getParameter("mobile");
-         req.getSession().setAttribute("email", email);
+        // req.getSession().setAttribute("email", email);
          req.getSession().setAttribute("mobile", mobile);
 
-         String fname = (String) req.getSession().getAttribute("fname");
-         String lname = (String) req.getSession().getAttribute("lname");
+        // String fname = (String) req.getSession().getAttribute("fname");
+         //String lname = (String) req.getSession().getAttribute("lname");
 
          //String emailCode = VerificationCode.generateVerificationCodeForEmail();
          String mobileCode = VerificationCode.generateVerificationCodeForMobile();
